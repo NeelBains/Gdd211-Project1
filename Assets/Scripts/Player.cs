@@ -69,14 +69,5 @@ public class Player : MonoBehaviour
             }
         }
 
-        if (Input.GetKey(KeyCode.LeftControl))
-        {
-            CC.height = 1.0f;
-        }
-        else
-        {
-            CC.height = 2.0f;
-        }
-
     }
 }
