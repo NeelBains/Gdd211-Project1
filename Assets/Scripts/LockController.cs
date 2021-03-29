@@ -6,11 +6,10 @@ using UnityEngine.UI;
 public class LockController : MonoBehaviour
 {
 
-    [SerializeField]
-    Text codeText;
+    [SerializeField] Text codeText;
     string codeTextValue = "";
-    [SerializeField]
-    GameObject Door1;
+    [SerializeField] GameObject Door1;
+    [SerializeField] GameObject Door2;
 
     // Update is called once per frame
     void Update()
@@ -20,6 +19,11 @@ public class LockController : MonoBehaviour
         if (codeTextValue == "1234")
         {
             Door1.GetComponent<Animator>().SetBool("Open",true);
+
+        }
+        if (codeTextValue == "1337")
+        {
+            Door2.GetComponent<Animator>().SetBool("Open2", true);
 
         }
 

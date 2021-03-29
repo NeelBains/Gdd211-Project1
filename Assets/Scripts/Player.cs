@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
         if (CC.isGrounded)
         {
             verticalSpeed = 0f;
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKey(KeyCode.Space))
             {
                 verticalSpeed = JumpSpeed;
             }
