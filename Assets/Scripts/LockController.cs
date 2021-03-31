@@ -10,6 +10,7 @@ public class LockController : MonoBehaviour
     string codeTextValue = "";
     [SerializeField] GameObject Door1;
     [SerializeField] GameObject Door2;
+    [SerializeField] GameObject Door3;
 
     // Update is called once per frame
     void Update()
@@ -24,6 +25,11 @@ public class LockController : MonoBehaviour
         if (codeTextValue == "1337")
         {
             Door2.GetComponent<Animator>().SetBool("Open2", true);
+
+        }
+        if (codeTextValue == "6824")
+        {
+            Door3.GetComponent<Animator>().SetBool("Open3", true);
 
         }
 
